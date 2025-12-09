@@ -72,4 +72,13 @@ Formula:
 
 <img width="1069" height="221" alt="Screenshot 2025-12-09 at 15 12 04" src="https://github.com/user-attachments/assets/1e3f63d0-9b06-413d-be73-1a7da3e35ba7" />
 
-By applying these Excel techniques, I am able to organise and analyse data more efficiently, identify patterns and trends, and extract meaningful insights quickly. Skills such as creating tables, using formulas like SUM, AVERAGE, VLOOKUP, SUMIFS, and AVERAGEIFS, as well as working with UNIQUE and TRANSPOSE, enable me to manipulate datasets effectively, perform conditional calculations, and generate clear reports. Mastering these functions enhances my ability to work with Excel confidently and makes data-driven decision-making faster and more accurate.
+10. Count Total Orders
+Used the COUNTIF function to count the number of orders by evaluating all Transaction IDs greater than zero.
+
+Formula:
+=COUNTIF(Table1[Transaction ID], ">0")
+
+<img width="864" height="195" alt="Screenshot 2025-12-09 at 15 24 39" src="https://github.com/user-attachments/assets/f33790d5-550b-4f0f-a70a-1a5c118e4d95" />
+
+
+By applying these Excel techniques, I am able to organise and analyse data more efficiently, identify patterns and trends, and extract meaningful insights quickly. Skills such as creating tables, using formulas like SUM, AVERAGE, VLOOKUP, SUMIFS, AVERAGEIFS, and COUNTIF, as well as working with UNIQUE and TRANSPOSE, enable me to manipulate datasets effectively, perform conditional calculations, and generate clear, accurate reports. Mastering these functions enhances my ability to work confidently in Excel and supports faster, more informed data-driven decision-making.
