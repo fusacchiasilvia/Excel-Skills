@@ -1,44 +1,75 @@
 # Retail Sales Dataset Analysis
 ## Overview
 
-This document outlines the tasks completed on the retail_sales_dataset.xlsx Excel file. The dataset contains information on retail sales, including customer age, sales figures, commissions, and other relevant metrics. The steps below describe how the data was analysed and summarised using various Excel functions.
+This project demonstrates a series of Excel techniques applied to organise, analyse, and extract insights from a dataset. The focus is on efficient data manipulation using tables, formulas, and conditional functions.
 
-## Tasks Completed
-Task	Description	Screenshot
-1. Convert Data Range into a Table, selected all available data from columns A to H and converted it into an Excel table to enable easier sorting, filtering, and applying functions.	(Insert screenshot of table here)
-2. Filter Data by Age.	Applied the Filter function on the Age column and sorted values from Largest to Smallest to identify trends by age.
+## Key Features & Tasks
+
+1. Convert Data Range into a Table
+All data from columns A to H was converted into an Excel Table to enable easier sorting, filtering, and formula application.
+(Insert screenshot of table here)
+
+2. Filter and Sort Data by Age
+Applied Excel’s Filter function on the Age column and sorted values from largest to smallest to identify trends and patterns by age.
+
 <img width="493" height="194" alt="Screenshot 2025-12-08 at 16 16 51" src="https://github.com/user-attachments/assets/21aaece3-aa91-4913-9142-0dab970e9a51" />
 
-3. I calculated the Total Commission and used the SUM function to calculate the total commission.
+3. Calculate Total Commission
+Used the SUM function to calculate the total commission across all entries.
+
 Cell: P10
-Formula: =SUM(H2:H100)
+Formula:
+=SUM(H2:H100)
 
 <img width="490" height="127" alt="Screenshot 2025-12-08 at 16 18 00" src="https://github.com/user-attachments/assets/26b933f2-80db-4f93-92fc-bb60c36b3c06" />
 
-4. I calculated the average commission	and used the AVERAGE function to calculate the average commission.
+4. Calculate Average Commission
+Used the AVERAGE function to determine the mean commission value.
+
 Cell: P11
-Formula: =AVERAGE(H2:H100
+Formula:
+=AVERAGE(H2:H100)
+
 <img width="493" height="188" alt="Screenshot 2025-12-08 at 16 19 23" src="https://github.com/user-attachments/assets/63205db3-33b2-4520-a3a6-1a46d25a11ee" />
 
-5. I used VLOOKUP to retrieve the commission for a specific customer ID.
-Formula: =VLOOKUP(J2, A:H, 8, FALSE)	
+5. Retrieve Specific Data with VLOOKUP
+Used VLOOKUP to find the commission for a specific customer ID.
 
-(Insert screenshot of VLOOKUP formula and result here)
+Formula:
+=VLOOKUP(J2, A:H, 8, FALSE)
 
+<img width="986" height="391" alt="Screenshot 2025-12-09 at 14 42 31" src="https://github.com/user-attachments/assets/590f8a6a-c58b-40b2-8a83-5eac997743fa" />
 
-6. To extract Unique Values, I used the UNIQUE function to list distinct entries from a column (e.g., customer names or regions).	(Insert screenshot of UNIQUE function here)
+6. Extract Unique Values
+Used the UNIQUE function to list distinct entries from a column (e.g., customer names or regions).
 
+Formula:
+=UNIQUE(Table1[Product Category])
 
-7. Conditional Summing	Used SUMIFS to sum values based on specific criteria, e.g., total commission by region or age group.	(Insert screenshot of SUMIFS function here)
+<img width="1100" height="284" alt="Screenshot 2025-12-09 at 15 04 20" src="https://github.com/user-attachments/assets/98f8f7cd-c4bb-4239-8aa1-7649e2639d26" />
 
+7. Conditional Summing
+Used SUMIFS to sum values based on specific criteria, e.g., total commission by region or age group.
 
-8. Conditional Averaging	Used AVERAGEIFS to calculate averages for subsets of data.	(Insert screenshot of AVERAGEIFS function here)
+Formula Example:
+=SUMIFS(H2:H100, B2:B100, "Region1")
 
+<img width="1064" height="147" alt="Screenshot 2025-12-09 at 15 07 53" src="https://github.com/user-attachments/assets/c748e2d6-6817-42ab-9bcd-0c1a039145d7" />
 
-9. Transpose Unique Values	Combined: TRANSPOSE and UNIQUE to display unique values horizontally rather than vertically.	(Insert screenshot of TRANSPOSE UNIQUE function here)
-Notes
+8. Conditional Averaging
+Used AVERAGEIFS to calculate averages for subsets of data.
 
+Formula Example:
+=AVERAGEIFS(H2:H100, B2:B100, "Region1")
 
-Using tables, filters, and dynamic functions such as UNIQUE, SUMIFS, VLOOKUP, and AVERAGEIFS improves efficiency and insight when analysing Excel data.
+<img width="1013" height="147" alt="Screenshot 2025-12-09 at 15 06 56" src="https://github.com/user-attachments/assets/02ed9f63-7202-4392-bb71-d3c1aeb931ee" />
 
-Screenshots provide visual confirmation of applied functions and results, making it easier to verify the work that has been completed.
+9. Transpose Unique Values
+Combined TRANSPOSE and UNIQUE to display unique values horizontally rather than vertically.
+
+Formula:
+=TRANSPOSE(UNIQUE(Table1[Gender]))
+
+<img width="1069" height="221" alt="Screenshot 2025-12-09 at 15 12 04" src="https://github.com/user-attachments/assets/1e3f63d0-9b06-413d-be73-1a7da3e35ba7" />
+
+By applying these Excel techniques, I am able to organise and analyse data more efficiently, identify patterns and trends, and extract meaningful insights quickly. Skills such as creating tables, using formulas like SUM, AVERAGE, VLOOKUP, SUMIFS, and AVERAGEIFS, as well as working with UNIQUE and TRANSPOSE, enable me to manipulate datasets effectively, perform conditional calculations, and generate clear reports. Mastering these functions enhances my ability to work with Excel confidently and makes data-driven decision-making faster and more accurate.
